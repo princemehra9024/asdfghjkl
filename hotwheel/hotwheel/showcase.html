@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDZ Collection - Premium Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="showcase.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="brand">RED<span>Z</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showcase.html">Collection</a></li>
+                <li><a href="index.html#details">Details</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="showcase-hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">PREMIUM COLLECTION</div>
+            <h1 class="hero-title">REDZ SHOWCASE</h1>
+            <p class="hero-description">
+                Explore our complete collection of premium die-cast racing legends. 
+                Each model is crafted with precision and passion for speed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <span class="filter-label">CATEGORY:</span>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="racing">Racing</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+                <button class="filter-btn" data-filter="vintage">Vintage</button>
+                <button class="filter-btn" data-filter="limited">Limited</button>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search collection...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Grid -->
+    <section class="showcase-main">
+        <div class="showcase-grid" id="showcaseGrid">
+            <!-- Card 1 -->
+            <article class="car-card" data-category="racing">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800" alt="Velocity X" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge">SPEED DEMON</div>
+                    <button class="card-wishlist" data-id="1">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">RACING SERIES</div>
+                    <h3 class="card-title">VELOCITY X</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">⚡</span> 350 HP</div>
+                        <div class="spec-item"><span class="spec-icon">🏁</span> Race Edition</div>
+                        <div class="spec-item"><span class="spec-icon">⭐</span> 1:64 Scale</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Aerodynamic perfection with chrome finish. Built for speed enthusiasts who demand excellence.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$49.99</div>
+                        <button class="btn-add-garage" data-id="1">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="car-card" data-category="premium">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800" alt="Thunder Strike" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge badge-limited">LIMITED</div>
+                    <button class="card-wishlist" data-id="2">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">PREMIUM SERIES</div>
+                    <h3 class="card-title">THUNDER STRIKE</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">⚡</span> 400 HP</div>
+                        <div class="spec-item"><span class="spec-icon">💎</span> Premium</div>
+                        <div class="spec-item"><span class="spec-icon">🔥</span> Limited</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Exclusive edition with metallic red finish. Power and elegance combined in die-cast form.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$59.99</div>
+                        <button class="btn-add-garage" data-id="2">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="car-card" data-category="vintage">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800" alt="Retro Racer" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge">CLASSIC</div>
+                    <button class="card-wishlist" data-id="3">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">VINTAGE SERIES</div>
+                    <h3 class="card-title">RETRO RACER</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">🕰️</span> Classic</div>
+                        <div class="spec-item"><span class="spec-icon">🎨</span> Hand-Painted</div>
+                        <div class="spec-item"><span class="spec-icon">📜</span> Authentic</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Timeless design meets modern craftsmanship. A collector's treasure with authentic details.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$44.99</div>
+                        <button class="btn-add-garage" data-id="3">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="car-card" data-category="racing">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" alt="Apex Predator" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge badge-exclusive">EXTREME</div>
+                    <button class="card-wishlist" data-id="4">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">PERFORMANCE SERIES</div>
+                    <h3 class="card-title">APEX PREDATOR</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">⚡</span> 500 HP</div>
+                        <div class="spec-item"><span class="spec-icon">🏆</span> Champion</div>
+                        <div class="spec-item"><span class="spec-icon">🚀</span> Extreme</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Unleashed aggression in miniature form. Dominate the track with raw power and style.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$69.99</div>
+                        <button class="btn-add-garage" data-id="4">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="car-card" data-category="racing">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800" alt="Street Fighter" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge">STREET</div>
+                    <button class="card-wishlist" data-id="5">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">URBAN SERIES</div>
+                    <h3 class="card-title">STREET FIGHTER</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">🌆</span> Urban</div>
+                        <div class="spec-item"><span class="spec-icon">🔧</span> Custom Kit</div>
+                        <div class="spec-item"><span class="spec-icon">💨</span> Turbo</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Urban warfare ready. Aggressive styling with custom body kit and street racing credentials.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$39.99</div>
+                        <button class="btn-add-garage" data-id="5">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="car-card" data-category="premium">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Night Rider" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge">STEALTH</div>
+                    <button class="card-wishlist" data-id="6">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">MIDNIGHT SERIES</div>
+                    <h3 class="card-title">NIGHT RIDER</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">🌙</span> Midnight</div>
+                        <div class="spec-item"><span class="spec-icon">🖤</span> Matte Black</div>
+                        <div class="spec-item"><span class="spec-icon">👻</span> Stealth</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Sleek and mysterious. Matte black finish with red accents for the ultimate stealth racer.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$54.99</div>
+                        <button class="btn-add-garage" data-id="6">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="car-card" data-category="limited">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800" alt="Phoenix Rising" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge badge-new">NEW</div>
+                    <button class="card-wishlist" data-id="7">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">LIMITED EDITION</div>
+                    <h3 class="card-title">PHOENIX RISING</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">🔥</span> Phoenix</div>
+                        <div class="spec-item"><span class="spec-icon">🌟</span> New 2025</div>
+                        <div class="spec-item"><span class="spec-icon">💎</span> Rare</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Rise from the ashes. Stunning flame graphics with metallic orange and red gradient finish.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$79.99</div>
+                        <button class="btn-add-garage" data-id="7">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="car-card" data-category="vintage">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1597404294360-feeeda8180ff?w=800" alt="Golden Era" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge">HERITAGE</div>
+                    <button class="card-wishlist" data-id="8">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">HERITAGE SERIES</div>
+                    <h3 class="card-title">GOLDEN ERA</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">👑</span> Heritage</div>
+                        <div class="spec-item"><span class="spec-icon">🏛️</span> 1960s</div>
+                        <div class="spec-item"><span class="spec-icon">✨</span> Chrome</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Classic muscle meets timeless design. Chrome details and authentic 60s racing livery.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$64.99</div>
+                        <button class="btn-add-garage" data-id="8">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="car-card" data-category="premium">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=800" alt="Carbon Shadow" class="card-image">
+                    <div class="card-diagonal"></div>
+                    <div class="card-badge badge-exclusive">ELITE</div>
+                    <button class="card-wishlist" data-id="9">♥</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">ELITE SERIES</div>
+                    <h3 class="card-title">CARBON SHADOW</h3>
+                    <div class="card-specs">
+                        <div class="spec-item"><span class="spec-icon">🖤</span> Carbon Fiber</div>
+                        <div class="spec-item"><span class="spec-icon">👑</span> Elite</div>
+                        <div class="spec-item"><span class="spec-icon">💯</span> Premium</div>
+                    </div>
+                    <div class="card-rating">★★★★★</div>
+                    <p class="card-description">
+                        Ultimate luxury in miniature. Real carbon fiber detailing with aerospace-grade finish.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-price">$89.99</div>
+                        <button class="btn-add-garage" data-id="9">ADD TO GARAGE</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number" id="totalCars">150+</div>
+                <div class="stat-label">Total Cars</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="limitedEditions">45+</div>
+                <div class="stat-label">Limited Editions</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="collectors">10K+</div>
+                <div class="stat-label">Happy Collectors</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="countries">85+</div>
+                <div class="stat-label">Countries Shipped</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>RED<span>Z</span></h3>
+                <p class="footer-description">
+                    Ignite your passion for speed with the ultimate Hot Wheels collection. 
+                    Premium die-cast cars for serious collectors.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="showcase.html">Collection</a>
+                <a href="index.html#details">Details</a>
+                <a href="index.html#reviews">Reviews</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Shipping Info</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQs</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <a href="#">📸 Instagram</a>
+                <a href="#">🐦 Twitter</a>
+                <a href="#">📘 Facebook</a>
+                <a href="#">🎥 YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hot Wheels REDZ Edition. All rights reserved. | Crafted with 🔥 & ⚡</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span>🏎️</span>
+        <span id="toastMessage">Added to garage!</span>
+    </div>
+
+    <script>
+        // ========== Loading Screen ==========
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading').classList.add('hidden');
+            }, 1000);
+        });
+
+        // ========== Header Scroll Effect ==========
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ========== Filter System ==========
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const carCards = document.querySelectorAll('.car-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                carCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(50px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // ========== Search Functionality ==========
+        const searchInput = document.getElementById('searchInput');
+
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+
+            carCards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const category = card.querySelector('.card-category').textContent.toLowerCase();
+                const description = card.querySelector('.card-description').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || category.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(50px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+
+        // ========== Wishlist System ==========
+        let wishlist = JSON.parse(localStorage.getItem('redz_wishlist')) || [];
+
+        function toggleWishlist(id, btn) {
+            const index = wishlist.indexOf(id);
+
+            if (index > -1) {
+                wishlist.splice(index, 1);
+                btn.classList.remove('active');
+                showToast('Removed from wishlist');
+            } else {
+                wishlist.push(id);
+                btn.classList.add('active');
+                showToast('Added to wishlist! ❤️');
+            }
+
+            localStorage.setItem('redz_wishlist', JSON.stringify(wishlist));
+        }
+
+        // Load wishlist state
+        document.querySelectorAll('.card-wishlist').forEach(btn => {
+            const id = btn.dataset.id;
+            if (wishlist.includes(id)) {
+                btn.classList.add('active');
+            }
+
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleWishlist(id, btn);
+            });
+        });
+
+        // ========== Add to Garage System ==========
+        let garageCount = parseInt(localStorage.getItem('redz_garage_count')) || 0;
+
+        function addToGarage(id) {
+            garageCount++;
+            localStorage.setItem('redz_garage_count', garageCount);
+            showToast('Added to your REDZ Garage! 🏁');
+        }
+
+        document.querySelectorAll('.btn-add-garage').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const id = btn.dataset.id;
+                addToGarage(id);
+
+                // Add animation
+                btn.textContent = 'ADDED! ✓';
+                btn.style.background = 'var(--redz-red)';
+                btn.style.color = 'var(--redz-white)';
+
+                setTimeout(() => {
+                    btn.textContent = 'ADD TO GARAGE';
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 2000);
+            });
+        });
+
+        // ========== Toast Notification ==========
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // ========== 3D Card Tilt Effect ==========
+        carCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // ========== Smooth Scroll ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ========== Stats Counter Animation ==========
+        function animateCounter(element, target, duration = 2000) {
+            let current = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + '+';
+                }
+            }, 16);
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(document.getElementById('totalCars').previousElementSibling || document.getElementById('totalCars'), 150);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsBanner = document.querySelector('.stats-banner');
+        if (statsBanner) {
+            statsObserver.observe(statsBanner);
+        }
+
+        console.log('🔥 REDZ Showcase Loaded - Premium Collection Ready!');
+    </script>
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hot Wheels - REDZ Edition</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="brand">RED<span>Z</span></a>
+
+      <!-- Desktop menu -->
+      <ul class="nav-menu nav-menu-desktop">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showcase.html">Collection</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile menu button -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Cart -->
+      <button class="btn-cart" id="cartBtn">
+        GARAGE
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </nav>
+
+    <!-- Mobile nav -->
+    <div class="nav-menu-wrapper">
+      <ul class="nav-menu nav-menu-mobile" id="mobileMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showcase.html">Collection</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu-backdrop hidden"></div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-subtitle">PREMIUM COLLECTION</p>
+        <h1 class="hero-title">
+          HOT WHEELS<br />
+          RED<span style="color: var(--redz-red);">Z</span>
+        </h1>
+        <p class="hero-description">
+          Experience the ultimate collection of die-cast racing legends. Bold designs,
+          fierce performance, and unmatched quality.
+        </p>
+        <a href="#showcase" class="btn-hero">EXPLORE NOW</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://creations.mattel.com/cdn/shop/files/yhcriqpxys44odz55duy_1600x1600.jpg?v=1763511647"
+             width="350"
+             alt="Hot Wheels Car" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="showcase-section">
+    <div class="section-header">
+      <h2 class="section-title">FEATURED CARS</h2>
+      <p class="section-subtitle">Handpicked premium models from our exclusive collection</p>
+    </div>
+
+    <div class="showcase-grid">
+      <!-- Card template repeated -->
+      <article class="card-redz fade-in" data-id="1">
+        <div class="card-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800"
+               alt="Speed Demon"
+               class="card-image" />
+          <div class="card-accent"></div>
+          <div class="card-badge">SPEED DEMON</div>
+          <button class="card-wishlist" data-wishlist="1">♥</button>
+        </div>
+        <div class="card-content">
+          <div class="card-category">RACING SERIES</div>
+          <h3 class="card-title">VELOCITY X</h3>
+          <div class="card-rating">★★★★★</div>
+          <p class="card-description">
+            Aerodynamic perfection with chrome finish. Built for speed enthusiasts who demand excellence.
+          </p>
+          <div class="card-footer">
+            <div class="card-price">$49.99</div>
+            <button class="btn-add-cart" data-product="1">ADD TO GARAGE</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card-redz fade-in" data-id="2">
+        <div class="card-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800"
+               alt="Thunder Strike"
+               class="card-image" />
+          <div class="card-accent"></div>
+          <div class="card-badge">LIMITED</div>
+          <button class="card-wishlist" data-wishlist="2">♥</button>
+        </div>
+        <div class="card-content">
+          <div class="card-category">PREMIUM SERIES</div>
+          <h3 class="card-title">THUNDER STRIKE</h3>
+          <div class="card-rating">★★★★★</div>
+          <p class="card-description">
+            Exclusive edition with metallic red finish. Power and elegance combined in die-cast form.
+          </p>
+          <div class="card-footer">
+            <div class="card-price">$59.99</div>
+            <button class="btn-add-cart" data-product="2">ADD TO GARAGE</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card-redz fade-in" data-id="3">
+        <div class="card-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800"
+               alt="Retro Classic"
+               class="card-image" />
+          <div class="card-accent"></div>
+          <div class="card-badge">CLASSIC</div>
+          <button class="card-wishlist" data-wishlist="3">♥</button>
+        </div>
+        <div class="card-content">
+          <div class="card-category">VINTAGE SERIES</div>
+          <h3 class="card-title">RETRO RACER</h3>
+          <div class="card-rating">★★★★★</div>
+          <p class="card-description">
+            Timeless design meets modern craftsmanship. A collector's treasure with authentic details.
+          </p>
+          <div class="card-footer">
+            <div class="card-price">$44.99</div>
+            <button class="btn-add-cart" data-product="3">ADD TO GARAGE</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card-redz fade-in" data-id="4">
+        <div class="card-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800"
+               alt="Apex Predator"
+               class="card-image" />
+          <div class="card-accent"></div>
+          <div class="card-badge">EXTREME</div>
+          <button class="card-wishlist" data-wishlist="4">♥</button>
+        </div>
+        <div class="card-content">
+          <div class="card-category">PERFORMANCE SERIES</div>
+          <h3 class="card-title">APEX PREDATOR</h3>
+          <div class="card-rating">★★★★★</div>
+          <p class="card-description">
+            Unleashed aggression in miniature form. Dominate the track with raw power and style.
+          </p>
+          <div class="card-footer">
+            <div class="card-price">$69.99</div>
+            <button class="btn-add-cart" data-product="4">ADD TO GARAGE</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card-redz fade-in" data-id="5">
+        <div class="card-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800"
+               alt="Street Fighter"
+               class="card-image" />
+          <div class="card-accent"></div>
+          <div class="card-badge">STREET</div>
+          <button class="card-wishlist" data-wishlist="5">♥</button>
+        </div>
+        <div class="card-content">
+          <div class="card-category">URBAN SERIES</div>
+          <h3 class="card-title">STREET FIGHTER</h3>
+          <div class="card-rating">★★★★★</div>
+          <p class="card-description">
+            Urban warfare ready. Aggressive styling with custom body kit and street racing credentials.
+          </p>
+          <div class="card-footer">
+            <div class="card-price">$39.99</div>
+            <button class="btn-add-cart" data-product="5">ADD TO GARAGE</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card-redz fade-in" data-id="6">
+        <div class="card-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800"
+               alt="Night Rider"
+               class="card-image" />
+          <div class="card-accent"></div>
+          <div class="card-badge">STEALTH</div>
+          <button class="card-wishlist" data-wishlist="6">♥</button>
+        </div>
+        <div class="card-content">
+          <div class="card-category">MIDNIGHT SERIES</div>
+          <h3 class="card-title">NIGHT RIDER</h3>
+          <div class="card-rating">★★★★★</div>
+          <p class="card-description">
+            Sleek and mysterious. Matte black finish with red accents for the ultimate stealth racer.
+          </p>
+          <div class="card-footer">
+            <div class="card-price">$54.99</div>
+            <button class="btn-add-cart" data-product="6">ADD TO GARAGE</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section id="details" class="details-section">
+    <div class="details-container">
+      <div class="details-header">
+        <h2 class="details-title">COLLECTION DETAILS</h2>
+        <p class="details-subtitle">Discover the craftsmanship behind REDZ Edition</p>
+      </div>
+      <div class="details-content">
+        <p class="details-text">
+          The REDZ Edition is a premium line of Hot Wheels die-cast cars, featuring bold red accents, high-detail
+          engineering, and limited-edition designs. Each model is crafted with precision to capture the essence
+          of speed and power.
+        </p>
+        <ul class="details-features">
+          <li>Hand-painted details with metallic finishes</li>
+          <li>1:64 scale with authentic racing graphics</li>
+          <li>Compatible with Hot Wheels tracks and playsets</li>
+          <li>Collector's packaging with certificate of authenticity</li>
+          <li>Exclusive REDZ badging and serial numbers</li>
+        </ul>
+        <p class="details-text">
+          Perfect for enthusiasts and collectors alike, these models represent the pinnacle of miniature automotive artistry.
+        </p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1558618047-3c8d3cc0e0b8?w=800"
+           alt="REDZ Collection Details"
+           class="details-image" />
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews-section">
+    <div class="reviews-header">
+      <h2 class="reviews-title">WHAT RACERS SAY</h2>
+      <p class="reviews-subtitle">Hear from our passionate collectors</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-card fade-in">
+        <h3 class="review-author">Alex R.</h3>
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">
+          "The REDZ Velocity X is a beast! The red accents pop like nothing else. Must-have for any garage."
+        </p>
+      </article>
+      <article class="review-card fade-in">
+        <h3 class="review-author">Jamie L.</h3>
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">
+          "Insane detail on the Thunder Strike. Feels premium in hand. Already ordered more from the series."
+        </p>
+      </article>
+      <article class="review-card fade-in">
+        <h3 class="review-author">Chris M.</h3>
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">
+          "Retro Racer brings back memories. Perfect blend of nostalgia and modern quality. Love the REDZ line!"
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" class="order-section">
+    <div class="order-header">
+      <h2 class="order-title">READY TO ORDER?</h2>
+      <p class="order-subtitle">Secure your REDZ collection today. Fast worldwide shipping.</p>
+    </div>
+    <form class="order-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" class="form-input" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-input" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address</label>
+        <textarea id="address" class="form-input" rows="3" placeholder="Enter your address" required></textarea>
+      </div>
+      <button type="submit" class="btn-order">PLACE ORDER</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>RED<span style="color: var(--redz-red);">Z</span></h3>
+        <p class="footer-description">
+          Ignite your passion for speed with the ultimate Hot Wheels collection.
+        </p>
+      </div>
+      <ul class="footer-links">
+        <li><h4>Quick Links</h4></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#showcase">Collection</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#order">Order</a></li>
+      </ul>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Facebook">📘</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hot Wheels REDZ Edition. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <!-- SINGLE JS BLOCK -->
+  <script>
+    (function () {
+      'use strict';
+
+      // ===== MOBILE NAV =====
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const backdrop = document.querySelector('.mobile-menu-backdrop');
+
+      function toggleMobileMenu() {
+        const isOpen = hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('open', isOpen);
+        backdrop.classList.toggle('hidden', !isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+      }
+
+      if (hamburger && mobileMenu && backdrop) {
+        hamburger.addEventListener('click', toggleMobileMenu);
+        backdrop.addEventListener('click', toggleMobileMenu);
+      }
+
+      // ===== HEADER SCROLL EFFECT =====
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if (header) {
+          header.classList.toggle('scrolled', window.scrollY > 100);
+        }
+      });
+
+      // ===== CART & WISHLIST =====
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+      const cartCountEl = document.getElementById('cartCount');
+      const cartBtn = document.getElementById('cartBtn');
+      const toast = document.getElementById('toast');
+
+      function updateCartCount() {
+        const count = cartItems.length;
+        if (cartCountEl) {
+          cartCountEl.textContent = count;
+          cartCountEl.style.display = count > 0 ? 'flex' : 'none';
+        }
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      }
+
+      function showToast(message, emoji = '🏎️') {
+        if (!toast) return;
+        toast.innerHTML = emoji + ' ' + message;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2800);
+      }
+
+      function addToCart(productId) {
+        if (!productId) return;
+        if (cartItems.includes(productId)) {
+          showToast('Already in your garage!', '⚠️');
+          return;
+        }
+        cartItems.push(productId);
+        updateCartCount();
+        showToast('Added to your REDZ Garage!');
+      }
+
+      function toggleWishlist(id) {
+        if (!id) return;
+        const index = wishlist.indexOf(id);
+        const btn = document.querySelector('[data-wishlist="' + id + '"]');
+
+        if (index > -1) {
+          wishlist.splice(index, 1);
+          if (btn) btn.classList.remove('active');
+          showToast('Removed from wishlist', '💔');
+        } else {
+          wishlist.push(id);
+          if (btn) btn.classList.add('active');
+          showToast('Added to wishlist!', '❤️');
+        }
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+      }
+
+      document.addEventListener('click', function (e) {
+        // Add to cart
+        const addCartBtn = e.target.closest('.btn-add-cart');
+        if (addCartBtn) {
+          const id =
+            addCartBtn.dataset.product ||
+            addCartBtn.dataset.id ||
+            addCartBtn.dataset.productId;
+          if (id) addToCart(id);
+        }
+
+        // Wishlist
+        const wishlistBtn = e.target.closest('.card-wishlist');
+        if (wishlistBtn) {
+          const id = wishlistBtn.dataset.wishlist || wishlistBtn.dataset.id;
+          if (id) toggleWishlist(id);
+        }
+      });
+
+      if (cartBtn) {
+        cartBtn.addEventListener('click', function () {
+          const count = cartItems.length;
+          if (count === 0) {
+            showToast('Your garage is empty. Start collecting!', '🚗');
+          } else {
+            showToast(
+              count + ' car' + (count === 1 ? '' : 's') + ' in your REDZ Garage!',
+              '🔥'
+            );
+            // window.location.href = 'garage.html';
+          }
+        });
+      }
+
+      // Load wishlist state
+      function loadWishlistStates() {
+        wishlist.forEach(function (id) {
+          const btn = document.querySelector('[data-wishlist="' + id + '"]');
+          if (btn) btn.classList.add('active');
+        });
+      }
+
+      // ORDER FORM
+      const orderForm = document.querySelector('.order-form');
+      if (orderForm) {
+        orderForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          showToast('Order placed successfully! Check your email.', '✅');
+          orderForm.reset();
+        });
+      }
+
+      // SMOOTH SCROLL
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // INIT
+      document.addEventListener('DOMContentLoaded', function () {
+        updateCartCount();
+        loadWishlistStates();
+        console.log('✓ REDZ Garage system initialized');
+        console.log('Cart items:', cartItems.length);
+        console.log('Wishlist items:', wishlist.length);
+      });
+    })();
+  </script>
+</body>
+</html>

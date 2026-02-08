@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About REDZ Garage | Hot Wheels Edition</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="brand" aria-label="REDZ Garage home">RED<span>Z</span></a>
+
+      <ul class="nav-menu nav-menu-desktop">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showcase.html">Collection</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="garage.html">Garage</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <button class="btn-cart" id="cartBtn" aria-label="Open garage">
+        GARAGE
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </nav>
+
+    <!-- Mobile nav -->
+    <div class="nav-menu-wrapper">
+      <ul class="nav-menu nav-menu-mobile" id="mobileMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showcase.html">Collection</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="garage.html">Garage</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-backdrop" id="menuBackdrop"></div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="about-hero" aria-labelledby="about-hero-title">
+      <div class="about-hero-inner">
+        <div class="about-hero-content">
+          <p class="eyebrow">ABOUT REDZ GARAGE</p>
+          <h1 id="about-hero-title">
+            Built by collectors,<br />
+            tuned for <span class="accent-speed">speed</span>.
+          </h1>
+          <p class="lead">
+            REDZ Garage is a fan‑made Hot Wheels experience that turns your die‑cast passion into a
+            fully tuned digital pit lane — from wishlist to showcase‑ready garage.
+          </p>
+
+          <div class="about-hero-actions">
+            <a href="#story" class="btn-primary">OUR STORY</a>
+            <a href="#team" class="btn-ghost">MEET THE CREW</a>
+          </div>
+
+          <!-- mobile micro badges -->
+          <div class="hero-badges">
+            <span class="hero-badge">Fan‑built project</span>
+            <span class="hero-badge">No official HW</span>
+            <span class="hero-badge">Dark REDZ UI</span>
+          </div>
+
+          <button class="scroll-hint" type="button" aria-label="Scroll to story" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+            <span>Scroll</span>
+            <span class="scroll-line"></span>
+          </button>
+        </div>
+
+        <aside class="about-hero-panel" aria-label="REDZ quick stats">
+          <div class="about-hero-stat-card">
+            <p class="stat-label">CARS TRACKED</p>
+            <p class="stat-value">250+</p>
+          </div>
+          <div class="about-hero-stat-card">
+            <p class="stat-label">GARAGES ONLINE</p>
+            <p class="stat-value">1.2K</p>
+          </div>
+          <div class="about-hero-stat-row">
+            <div class="mini-stat">
+              <span class="mini-label">Avg. load</span>
+              <span class="mini-value">0.4s</span>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-label">Mode</span>
+              <span class="mini-value">Dark • REDZ</span>
+            </div>
+          </div>
+          <div class="about-hero-badge">
+            <span>EST. 2025</span>
+            <span>REDZ EDITION</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story" class="about-story section" aria-labelledby="story-title">
+      <div class="section-heading">
+        <h2 id="story-title">From hostel shelf to global grid.</h2>
+        <p>
+          REDZ Garage started as a late‑night experiment to make die‑cast collections feel like a real
+          race team control room — not just another spreadsheet.
+        </p>
+      </div>
+
+      <div class="about-story-grid">
+        <article class="about-story-block">
+          <h3>It began with one shelf.</h3>
+          <p>
+            A handful of Hot Wheels lined up near a laptop, a few lines of JavaScript, and a simple
+            goal: make tracking cars feel as fun as unboxing them.
+          </p>
+          <p>
+            Every release since then has focused on sharper visuals, smoother motion, and clearer
+            stats — so your garage always looks ready for race day screenshots.
+          </p>
+        </article>
+
+        <aside class="about-highlight" aria-label="REDZ design principles">
+          <h3>Design checklist for every feature</h3>
+          <ul>
+            <li>Does it feel like sitting in a race cockpit?</li>
+            <li>Does it respect a collector’s time and obsession?</li>
+            <li>Does it look 🔥 in both mobile and desktop shots?</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="about-stat-row">
+        <article class="stat-card">
+          <p class="stat-value">0.01s</p>
+          <p class="stat-label">Garage updates</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-value">99.9%</p>
+          <p class="stat-label">Collection uptime</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-value">24/7</p>
+          <p class="stat-label">Feature tuning</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="about-timeline section" aria-labelledby="timeline-title">
+      <div class="section-heading">
+        <h2 id="timeline-title">Laps that shaped the garage.</h2>
+        <p>Key laps from raw concept to the current REDZ Edition build.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <article class="timeline-card">
+            <p class="timeline-year">2024</p>
+            <h3>Concept lap</h3>
+            <p>
+              First sketches for a digital garage UI, drawn between college assignments and late‑night
+              die‑cast hunts.
+            </p>
+          </article>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <article class="timeline-card">
+            <p class="timeline-year">2025 · Q1</p>
+            <h3>Alpha build</h3>
+            <p>
+              Basic wishlist, cart and garage overview shipped to a tiny group of collectors for
+              real‑world testing.
+            </p>
+          </article>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <article class="timeline-card">
+            <p class="timeline-year">2025 · Q3</p>
+            <h3>REDZ Edition</h3>
+            <p>
+              Full dark‑mode redesign, dynamic cards, and REDZ‑style animations tuned for screenshots
+              and show‑off reels.
+            </p>
+          </article>
+        </li>
+
+        <li class="timeline-item timeline-item-future">
+          <div class="timeline-dot"></div>
+          <article class="timeline-card">
+            <p class="timeline-year">Next lap</p>
+            <h3>Community‑powered builds</h3>
+            <p>
+              Shared garages, rarity tracking, and AI‑powered recommendations that understand your
+              collection better than any wishlist app.
+            </p>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="about-team section" aria-labelledby="team-title">
+      <div class="section-heading">
+        <h2 id="team-title">The crew in the pit lane.</h2>
+        <p>A small pit crew with a big obsession for tiny cars and clean code.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-avatar" aria-hidden="true">RZ</div>
+          <h3 class="team-name">Redz Dev</h3>
+          <p class="team-role">Founder · Full‑stack Tuner</p>
+          <p class="team-bio">
+            Shapes every screen like a race line — minimal friction from landing page to garage view.
+          </p>
+          <ul class="team-tags">
+            <li>Frontend racing</li>
+            <li>Garage logic</li>
+            <li>UI pit stops</li>
+          </ul>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar" aria-hidden="true">UX</div>
+          <h3 class="team-name">Ghost Co‑Driver</h3>
+          <p class="team-role">UX · Motion Design</p>
+          <p class="team-bio">
+            Tunes micro‑interactions so every tap feels like shifting gears at redline on mobile and desktop.
+          </p>
+          <ul class="team-tags">
+            <li>Animations</li>
+            <li>Transitions</li>
+            <li>Feel of speed</li>
+          </ul>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar" aria-hidden="true">AI</div>
+          <h3 class="team-name">AI Garage Brain</h3>
+          <p class="team-role">Data · Recommendations</p>
+          <p class="team-bio">
+            Studies your favourite castings and lines up the next must‑have releases before they hit
+            the pegs.
+          </p>
+          <ul class="team-tags">
+            <li>Smart lists</li>
+            <li>Rarity scores</li>
+            <li>Future features</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="about-values section" aria-labelledby="values-title">
+      <div class="section-heading">
+        <h2 id="values-title">REDZ pit‑lane rules.</h2>
+        <p>Three checkpoints every feature must pass before it ships.</p>
+      </div>
+
+      <div class="values-grid">
+        <article class="value-card">
+          <h3>Collector‑first</h3>
+          <p>
+            Built around how collectors actually sort, flex and share their cars — not around boring
+            admin panels.
+          </p>
+        </article>
+        <article class="value-card">
+          <h3>Honest speed</h3>
+          <p>
+            Fast UI, clear decisions. No dark patterns, no fake scarcity — just clean laps and quick
+            access to your cars.
+          </p>
+        </article>
+        <article class="value-card">
+          <h3>Playful details</h3>
+          <p>
+            Micro‑animations, tiny easter eggs and copy that remembers this is about joy, not just
+            data entry.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="about-faq section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <h2 id="faq-title">Questions from the pit lane.</h2>
+        <p>A few quick answers before you start building your REDZ garage.</p>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-item" open>
+          <summary>Is REDZ Garage official Hot Wheels?</summary>
+          <p>
+            No. REDZ Garage is a fan project inspired by the Hot Wheels community and does not
+            represent or sell on behalf of the brand.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does it work on mobile?</summary>
+          <p>
+            Yes. Layout, cards, and garage interactions are designed to feel smooth on phones first
+            and then scaled up for desktops.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Will my garage sync across devices?</summary>
+          <p>
+            Current builds use browser storage. Cloud profiles and multi‑device sync are planned for
+            upcoming releases.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I suggest new features?</summary>
+          <p>
+            Absolutely. Feature ideas and bug reports are treated like premium fuel — they decide
+            which upgrades ship next.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="about-cta section" aria-labelledby="cta-title">
+      <div class="about-cta-inner">
+        <div>
+          <h2 id="cta-title">Ready to tune your dream garage?</h2>
+          <p>
+            Jump back into the collection, add cars to your wishlist, and start building a REDZ grid
+            worth flexing.
+          </p>
+        </div>
+        <div class="about-cta-actions">
+          <a href="showcase.html" class="btn-primary">EXPLORE CARS</a>
+          <a href="garage.html" class="btn-ghost">OPEN GARAGE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>RED<span>Z</span></h3>
+        <p class="footer-description">
+          Ignite your passion for speed with the ultimate Hot Wheels collection.
+        </p>
+      </div>
+      <ul class="footer-links">
+        <li><h4>Quick Links</h4></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="showcase.html">Collection</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="garage.html">Garage</a></li>
+      </ul>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Facebook">📘</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 REDZ Garage. Fan‑made Hot Wheels experience.</p>
+    </div>
+  </footer>
+
+  <!-- SIMPLE ABOUT PAGE JS: mobile nav + cart count reuse -->
+  <script>
+    (function () {
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const backdrop = document.getElementById('menuBackdrop');
+      const cartCountEl = document.getElementById('cartCount');
+
+      // mobile nav
+      function toggleMenu() {
+        const isOpen = mobileMenu.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+        backdrop.classList.toggle('show', isOpen);
+      }
+
+      if (hamburger && mobileMenu && backdrop) {
+        hamburger.addEventListener('click', toggleMenu);
+        backdrop.addEventListener('click', toggleMenu);
+      }
+
+      // cart count from localStorage (same key as main site)
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      if (cartCountEl) {
+        cartCountEl.textContent = cartItems.length;
+        cartCountEl.style.display = cartItems.length > 0 ? 'inline-flex' : 'none';
+      }
+    })();
+  </script>
+</body>
+</html>

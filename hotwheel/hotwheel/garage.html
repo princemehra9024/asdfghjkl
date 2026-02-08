@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Garage - REDZ Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="garage.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="brand">RED<span>Z</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showcase.html">Collection</a></li>
+              
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Garage Hero -->
+    <section class="garage-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">MY GARAGE</h1>
+            <p class="hero-subtitle">
+                Your premium REDZ collection awaits. Review your selections and race to checkout!
+            </p>
+            <div class="garage-count" id="garageCount">3 CARS IN GARAGE</div>
+        </div>
+    </section>
+
+    <!-- Garage Main -->
+    <section class="garage-main">
+        <div class="garage-container">
+            <!-- Cart Items -->
+            <div class="cart-section">
+                <div class="section-header">
+                    <h2 class="section-title">YOUR COLLECTION</h2>
+                    <button class="clear-all-btn" id="clearAllBtn">CLEAR ALL</button>
+                </div>
+
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item" data-id="1" data-price="49.99">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=300" alt="Velocity X" class="item-image">
+                        <div class="item-details">
+                            <div class="item-badge">LIMITED EDITION</div>
+                            <h3 class="item-title">VELOCITY X</h3>
+                            <div class="item-specs">
+                                <span class="spec-tag">⚡ 350 HP</span>
+                                <span class="spec-tag">🏁 Race Edition</span>
+                                <span class="spec-tag">⭐ 1:64 Scale</span>
+                            </div>
+                            <div class="item-price">$49.99</div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="remove-btn" title="Remove">✕</button>
+                            <div class="quantity-control">
+                                <button class="qty-btn qty-minus">−</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item" data-id="2" data-price="59.99">
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=300" alt="Thunder Strike" class="item-image">
+                        <div class="item-details">
+                            <div class="item-badge">PREMIUM SERIES</div>
+                            <h3 class="item-title">THUNDER STRIKE</h3>
+                            <div class="item-specs">
+                                <span class="spec-tag">⚡ 400 HP</span>
+                                <span class="spec-tag">💎 Premium</span>
+                                <span class="spec-tag">🔥 Limited</span>
+                            </div>
+                            <div class="item-price">$59.99</div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="remove-btn" title="Remove">✕</button>
+                            <div class="quantity-control">
+                                <button class="qty-btn qty-minus">−</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item" data-id="3" data-price="69.99">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=300" alt="Apex Predator" class="item-image">
+                        <div class="item-details">
+                            <div class="item-badge">EXTREME</div>
+                            <h3 class="item-title">APEX PREDATOR</h3>
+                            <div class="item-specs">
+                                <span class="spec-tag">⚡ 500 HP</span>
+                                <span class="spec-tag">🏆 Champion</span>
+                                <span class="spec-tag">🚀 Extreme</span>
+                            </div>
+                            <div class="item-price">$69.99</div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="remove-btn" title="Remove">✕</button>
+                            <div class="quantity-control">
+                                <button class="qty-btn qty-minus">−</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty Cart State (Hidden by default) -->
+                <div class="empty-cart" id="emptyCart" style="display: none;">
+                    <div class="empty-icon">🏎️</div>
+                    <h2 class="empty-title">YOUR GARAGE IS EMPTY</h2>
+                    <p class="empty-text">Start building your premium REDZ collection today!</p>
+                    <a href="showcase.html" class="btn-browse">BROWSE COLLECTION</a>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="summary-section">
+                <h3 class="summary-title">ORDER SUMMARY</h3>
+
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal</span>
+                    <span class="summary-value" id="subtotal">$179.97</span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="summary-label">Shipping</span>
+                    <span class="summary-value" id="shipping">$9.99</span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="summary-label">Tax (10%)</span>
+                    <span class="summary-value" id="tax">$18.00</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-total">
+                    <span class="total-label">TOTAL</span>
+                    <span class="total-value" id="totalPrice">$207.96</span>
+                </div>
+
+                <div class="promo-section">
+                    <div class="promo-input-group">
+                        <input type="text" class="promo-input" id="promoInput" placeholder="Promo Code">
+                        <button class="promo-btn" id="applyPromo">APPLY</button>
+                    </div>
+                </div>
+
+                <button class="checkout-btn" id="checkoutBtn">CHECKOUT NOW</button>
+
+                <div class="secure-badge">
+                    <span class="secure-icon">🔒</span>
+                    <span>Secure Checkout - 100% Safe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Section -->
+    <section class="recommended-section">
+        <div class="recommended-header">
+            <h2 class="recommended-title">COMPLETE YOUR COLLECTION</h2>
+        </div>
+        <div class="recommended-grid">
+            <div class="recommended-card" onclick="window.location.href='details.html'">
+                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400" alt="Retro Racer" class="recommended-image">
+                <div class="recommended-content">
+                    <h3 class="recommended-card-title">RETRO RACER</h3>
+                    <div class="recommended-price">$44.99</div>
+                </div>
+            </div>
+            <div class="recommended-card" onclick="window.location.href='details.html'">
+                <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=400" alt="Street Fighter" class="recommended-image">
+                <div class="recommended-content">
+                    <h3 class="recommended-card-title">STREET FIGHTER</h3>
+                    <div class="recommended-price">$39.99</div>
+                </div>
+            </div>
+            <div class="recommended-card" onclick="window.location.href='details.html'">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400" alt="Night Rider" class="recommended-image">
+                <div class="recommended-content">
+                    <h3 class="recommended-card-title">NIGHT RIDER</h3>
+                    <div class="recommended-price">$54.99</div>
+                </div>
+            </div>
+            <div class="recommended-card" onclick="window.location.href='details.html'">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400" alt="Phoenix Rising" class="recommended-image">
+                <div class="recommended-content">
+                    <h3 class="recommended-card-title">PHOENIX RISING</h3>
+                    <div class="recommended-price">$79.99</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span>🏎️</span>
+        <span id="toastMessage">Action completed!</span>
+    </div>
+
+    <script>
+        // ========== Loading Screen ==========
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading').classList.add('hidden');
+            }, 1000);
+        });
+
+        // ========== Calculate Totals ==========
+        function calculateTotals() {
+            const cartItems = document.querySelectorAll('.cart-item');
+            let subtotal = 0;
+
+            cartItems.forEach(item => {
+                const price = parseFloat(item.dataset.price);
+                const qty = parseInt(item.querySelector('.qty-value').textContent);
+                subtotal += price * qty;
+            });
+
+            const shipping = subtotal > 0 ? 9.99 : 0;
+            const tax = subtotal * 0.1;
+            const total = subtotal + shipping + tax;
+
+            document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
+            document.getElementById('shipping').textContent = '$' + shipping.toFixed(2);
+            document.getElementById('tax').textContent = '$' + tax.toFixed(2);
+            document.getElementById('totalPrice').textContent = '$' + total.toFixed(2);
+
+            // Update garage count
+            const totalItems = Array.from(cartItems).reduce((sum, item) => {
+                return sum + parseInt(item.querySelector('.qty-value').textContent);
+            }, 0);
+
+            document.getElementById('garageCount').textContent = 
+                totalItems === 1 ? '1 CAR IN GARAGE' : `${totalItems} CARS IN GARAGE`;
+
+            return { subtotal, total, count: cartItems.length };
+        }
+
+        // ========== Check Empty Cart ==========
+        function checkEmptyCart() {
+            const cartItems = document.getElementById('cartItems');
+            const emptyCart = document.getElementById('emptyCart');
+            const items = cartItems.querySelectorAll('.cart-item');
+
+            if (items.length === 0) {
+                cartItems.style.display = 'none';
+                emptyCart.style.display = 'block';
+                document.getElementById('garageCount').textContent = '0 CARS IN GARAGE';
+            } else {
+                cartItems.style.display = 'flex';
+                emptyCart.style.display = 'none';
+            }
+        }
+
+        // ========== Quantity Controls ==========
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('qty-plus')) {
+                const qtyValue = e.target.previousElementSibling;
+                let qty = parseInt(qtyValue.textContent);
+                if (qty < 10) {
+                    qtyValue.textContent = qty + 1;
+                    calculateTotals();
+                    showToast('Quantity updated! 🔥');
+                }
+            }
+
+            if (e.target.classList.contains('qty-minus')) {
+                const qtyValue = e.target.nextElementSibling;
+                let qty = parseInt(qtyValue.textContent);
+                if (qty > 1) {
+                    qtyValue.textContent = qty - 1;
+                    calculateTotals();
+                    showToast('Quantity updated! 🔥');
+                }
+            }
+
+            // Remove Item
+            if (e.target.classList.contains('remove-btn')) {
+                const cartItem = e.target.closest('.cart-item');
+                const itemTitle = cartItem.querySelector('.item-title').textContent;
+
+                cartItem.style.opacity = '0';
+                cartItem.style.transform = 'translateX(-100%)';
+
+                setTimeout(() => {
+                    cartItem.remove();
+                    calculateTotals();
+                    checkEmptyCart();
+                    showToast(`${itemTitle} removed from garage`);
+                }, 300);
+            }
+        });
+
+        // ========== Clear All ==========
+        document.getElementById('clearAllBtn').addEventListener('click', () => {
+            if (confirm('Are you sure you want to clear your entire garage?')) {
+                const cartItems = document.querySelectorAll('.cart-item');
+                cartItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateX(-100%)';
+                        setTimeout(() => {
+                            item.remove();
+                            if (index === cartItems.length - 1) {
+                                calculateTotals();
+                                checkEmptyCart();
+                            }
+                        }, 300);
+                    }, index * 100);
+                });
+                showToast('Garage cleared! 🧹');
+            }
+        });
+
+        // ========== Promo Code ==========
+        document.getElementById('applyPromo').addEventListener('click', () => {
+            const promoInput = document.getElementById('promoInput');
+            const code = promoInput.value.toUpperCase().trim();
+
+            if (code === 'REDZ2025' || code === 'SPEED20') {
+                showToast('Promo code applied! 20% OFF 🎉');
+                promoInput.style.borderColor = '#00FF00';
+                // Apply discount logic here
+            } else if (code === '') {
+                showToast('Please enter a promo code');
+            } else {
+                showToast('Invalid promo code ❌');
+                promoInput.style.borderColor = 'var(--redz-red)';
+            }
+        });
+
+        // ========== Checkout ==========
+        document.getElementById('checkoutBtn').addEventListener('click', () => {
+            const totals = calculateTotals();
+            if (totals.count > 0) {
+                showToast('Proceeding to checkout... 🏁');
+                setTimeout(() => {
+                    // window.location.href = 'checkout.html';
+                    alert('Checkout page would load here!\n\nTotal: ' + document.getElementById('totalPrice').textContent);
+                }, 1500);
+            } else {
+                showToast('Your garage is empty!');
+            }
+        });
+
+        // ========== Toast Notification ==========
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // ========== Initialize ==========
+        calculateTotals();
+        checkEmptyCart();
+
+        console.log('🔥 REDZ Garage Loaded - Your Collection Awaits!');
+    </script>
+</body>
+</html>
